@@ -19,7 +19,7 @@ pipeline{
             }
              stage ('Deploy using docker'){
                 steps{
-                    sh "cd ~/jenkins-exercise-repo2 && docker-compose && docker-compose up -d"
+                    sh "cd ~/jenkins-exercise-repo2 && docker-compose pull && docker-compose up -d"
                 }
              }       
         }
