@@ -2,6 +2,7 @@ pipeline{
         agent any
         environment{
                 DB_PASSWORD="password"
+        }
         stages{
             stage('Make Directory for git and clone repo'){
                 steps{
@@ -24,4 +25,3 @@ pipeline{
              }       
         }
      }
-}
