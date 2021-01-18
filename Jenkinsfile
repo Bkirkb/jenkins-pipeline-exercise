@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Make Directory for git and clone repo'){
                 steps{
-                    sh "mkdir ~/jenkins-exercise-repo"
+                    sh "mkdir ~/jenkins-exercise-repo2"
                     sh "git clone https://gitlab.com/qacdevops/chaperootodo_client.git"
                 }
             }
